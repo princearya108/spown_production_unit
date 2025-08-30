@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Spawn Production Unit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html" style="text-decoration: none; color: #2c5530;">Spawn Production Unit</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link active">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="blog-hero-content">
+                <h1>Mushroom Spawn Blog</h1>
+                <p>Latest insights, tips, and techniques for mushroom cultivation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-layout">
+                <!-- Main Blog Posts -->
+                <div class="blog-main">
+                    <div class="blog-filters">
+                        <button class="filter-btn active" data-filter="all">All Posts</button>
+                        <button class="filter-btn" data-filter="cultivation">Cultivation</button>
+                        <button class="filter-btn" data-filter="spawn">Spawn Production</button>
+                        <button class="filter-btn" data-filter="tips">Tips & Tricks</button>
+                    </div>
+
+                    <div class="blog-posts">
+                        <!-- Blog Post 1 -->
+                        <article class="blog-post" data-category="cultivation">
+                            <div class="blog-post-image">
+                                <img src="https://via.placeholder.com/400x250/2c5530/ffffff?text=Mushroom+Cultivation" alt="Mushroom Cultivation">
+                                <div class="blog-post-date">
+                                    <span class="day">15</span>
+                                    <span class="month">Dec</span>
+                                </div>
+                            </div>
+                            <div class="blog-post-content">
+                                <div class="blog-post-meta">
+                                    <span class="category">Cultivation</span>
+                                    <span class="author">By Admin</span>
+                                </div>
+                                <h3><a href="#">Complete Guide to Button Mushroom Cultivation</a></h3>
+                                <p>Learn the step-by-step process of growing button mushrooms from spawn to harvest. This comprehensive guide covers everything from substrate preparation to optimal growing conditions.</p>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 2 -->
+                        <article class="blog-post" data-category="spawn">
+                            <div class="blog-post-image">
+                                <img src="https://via.placeholder.com/400x250/4a7c59/ffffff?text=Spawn+Production" alt="Spawn Production">
+                                <div class="blog-post-date">
+                                    <span class="day">12</span>
+                                    <span class="month">Dec</span>
+                                </div>
+                            </div>
+                            <div class="blog-post-content">
+                                <div class="blog-post-meta">
+                                    <span class="category">Spawn Production</span>
+                                    <span class="author">By Expert</span>
+                                </div>
+                                <h3><a href="#">Quality Control in Spawn Production</a></h3>
+                                <p>Understanding the importance of quality control measures in spawn production to ensure high yields and healthy mushroom growth.</p>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 3 -->
+                        <article class="blog-post" data-category="tips">
+                            <div class="blog-post-image">
+                                <img src="https://via.placeholder.com/400x250/2c5530/ffffff?text=Growing+Tips" alt="Growing Tips">
+                                <div class="blog-post-date">
+                                    <span class="day">10</span>
+                                    <span class="month">Dec</span>
+                                </div>
+                            </div>
+                            <div class="blog-post-content">
+                                <div class="blog-post-meta">
+                                    <span class="category">Tips & Tricks</span>
+                                    <span class="author">By Farmer</span>
+                                </div>
+                                <h3><a href="#">10 Essential Tips for Successful Mushroom Farming</a></h3>
+                                <p>Discover the top 10 tips that every mushroom farmer should know to maximize their yield and maintain healthy crops throughout the growing season.</p>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 4 -->
+                        <article class="blog-post" data-category="cultivation">
+                            <div class="blog-post-image">
+                                <img src="https://via.placeholder.com/400x250/4a7c59/ffffff?text=Oyster+Mushrooms" alt="Oyster Mushrooms">
+                                <div class="blog-post-date">
+                                    <span class="day">08</span>
+                                    <span class="month">Dec</span>
+                                </div>
+                            </div>
+                            <div class="blog-post-content">
+                                <div class="blog-post-meta">
+                                    <span class="category">Cultivation</span>
+                                    <span class="author">By Specialist</span>
+                                </div>
+                                <h3><a href="#">Oyster Mushroom Cultivation: A Beginner's Guide</a></h3>
+                                <p>Everything you need to know about growing oyster mushrooms, from choosing the right spawn to harvesting your first crop.</p>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 5 -->
+                        <article class="blog-post" data-category="spawn">
+                            <div class="blog-post-image">
+                                <img src="https://via.placeholder.com/400x250/2c5530/ffffff?text=Spawn+Storage" alt="Spawn Storage">
+                                <div class="blog-post-date">
+                                    <span class="day">05</span>
+                                    <span class="month">Dec</span>
+                                </div>
+                            </div>
+                            <div class="blog-post-content">
+                                <div class="blog-post-meta">
+                                    <span class="category">Spawn Production</span>
+                                    <span class="author">By Technician</span>
+                                </div>
+                                <h3><a href="#">Proper Storage and Handling of Mushroom Spawn</a></h3>
+                                <p>Learn the best practices for storing and handling mushroom spawn to maintain its viability and ensure successful cultivation.</p>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 6 -->
+                        <article class="blog-post" data-category="tips">
+                            <div class="blog-post-image">
+                                <img src="https://via.placeholder.com/400x250/4a7c59/ffffff?text=Common+Problems" alt="Common Problems">
+                                <div class="blog-post-date">
+                                    <span class="day">03</span>
+                                    <span class="month">Dec</span>
+                                </div>
+                            </div>
+                            <div class="blog-post-content">
+                                <div class="blog-post-meta">
+                                    <span class="category">Tips & Tricks</span>
+                                    <span class="author">By Consultant</span>
+                                </div>
+                                <h3><a href="#">Common Problems in Mushroom Cultivation and Solutions</a></h3>
+                                <p>Identify and solve the most common issues that mushroom growers face, from contamination to poor yields.</p>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="page-btn prev" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                        <div class="page-numbers">
+                            <button class="page-number active">1</button>
+                            <button class="page-number">2</button>
+                            <button class="page-number">3</button>
+                        </div>
+                        <button class="page-btn next">Next <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="blog-sidebar">
+                    <!-- Search -->
+                    <div class="sidebar-widget">
+                        <h4>Search</h4>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search articles...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="sidebar-widget">
+                        <h4>Categories</h4>
+                        <ul class="category-list">
+                            <li><a href="#" data-filter="cultivation">Cultivation <span>(8)</span></a></li>
+                            <li><a href="#" data-filter="spawn">Spawn Production <span>(5)</span></a></li>
+                            <li><a href="#" data-filter="tips">Tips & Tricks <span>(12)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Recent Posts -->
+                    <div class="sidebar-widget">
+                        <h4>Recent Posts</h4>
+                        <div class="recent-posts">
+                            <div class="recent-post">
+                                <img src="https://via.placeholder.com/60x60/2c5530/ffffff?text=R" alt="Recent Post">
+                                <div class="recent-post-content">
+                                    <h5><a href="#">Button Mushroom Cultivation Guide</a></h5>
+                                    <span class="recent-date">Dec 15, 2024</span>
+                                </div>
+                            </div>
+                            <div class="recent-post">
+                                <img src="https://via.placeholder.com/60x60/4a7c59/ffffff?text=R" alt="Recent Post">
+                                <div class="recent-post-content">
+                                    <h5><a href="#">Quality Control in Spawn Production</a></h5>
+                                    <span class="recent-date">Dec 12, 2024</span>
+                                </div>
+                            </div>
+                            <div class="recent-post">
+                                <img src="https://via.placeholder.com/60x60/2c5530/ffffff?text=R" alt="Recent Post">
+                                <div class="recent-post-content">
+                                    <h5><a href="#">10 Essential Growing Tips</a></h5>
+                                    <span class="recent-date">Dec 10, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="sidebar-widget newsletter-widget">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to get the latest updates on mushroom cultivation.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Spawn Production Unit</h3>
+                    <p>Reliable source for high-quality mushroom spawn</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> info@spawnproduction.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Spawn Production Unit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Spawn Production Unit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html" style="text-decoration: none; color: #2c5530;">Spawn Production Unit</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link active">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- Cart Icon -->
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Hero Section -->
+    <section class="shop-hero">
+        <div class="container">
+            <div class="shop-hero-content">
+                <h1>Mushroom Spawn Shop</h1>
+                <p>High-quality spawn for all your mushroom cultivation needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="shop-content">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Sidebar Filters -->
+                <aside class="shop-sidebar">
+                    <div class="filter-section">
+                        <h4>Categories</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" value="button" checked>
+                                <span>Button Mushroom</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="oyster" checked>
+                                <span>Oyster Mushroom</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="shiitake" checked>
+                                <span>Shiitake Mushroom</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="specialty" checked>
+                                <span>Specialty Mushrooms</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h4>Price Range</h4>
+                        <div class="price-range">
+                            <input type="range" id="priceRange" min="50" max="500" value="500">
+                            <div class="price-display">
+                                <span>₹50 - ₹<span id="priceValue">500</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h4>Sort By</h4>
+                        <select id="sortSelect">
+                            <option value="name">Name A-Z</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="popularity">Popularity</option>
+                        </select>
+                    </div>
+
+                    <button class="clear-filters">Clear All Filters</button>
+                </aside>
+
+                <!-- Main Shop Area -->
+                <div class="shop-main">
+                    <div class="shop-header">
+                        <div class="results-info">
+                            <span id="resultsCount">12 products found</span>
+                        </div>
+                        <div class="view-options">
+                            <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                            <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Product 1 -->
+                        <div class="product-item" data-category="button" data-price="150">
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x200/2c5530/ffffff?text=Button+Spawn" alt="Button Mushroom Spawn">
+                                <div class="product-badge">Best Seller</div>
+                                <div class="product-actions">
+                                    <button class="quick-view" data-product="1"><i class="fas fa-eye"></i></button>
+                                    <button class="add-to-cart" data-product="1"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Button Mushroom Spawn</h3>
+                                <p>High-quality spawn for button mushroom cultivation</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(24 reviews)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">₹150</span>
+                                    <span class="unit">/kg</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart-btn" data-product="1">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product-item" data-category="oyster" data-price="120">
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x200/4a7c59/ffffff?text=Oyster+Spawn" alt="Oyster Mushroom Spawn">
+                                <div class="product-actions">
+                                    <button class="quick-view" data-product="2"><i class="fas fa-eye"></i></button>
+                                    <button class="add-to-cart" data-product="2"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Oyster Mushroom Spawn</h3>
+                                <p>Premium spawn for oyster mushroom production</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(18 reviews)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">₹120</span>
+                                    <span class="unit">/kg</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart-btn" data-product="2">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="product-item" data-category="shiitake" data-price="200">
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x200/2c5530/ffffff?text=Shiitake+Spawn" alt="Shiitake Mushroom Spawn">
+                                <div class="product-badge">Premium</div>
+                                <div class="product-actions">
+                                    <button class="quick-view" data-product="3"><i class="fas fa-eye"></i></button>
+                                    <button class="add-to-cart" data-product="3"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Shiitake Mushroom Spawn</h3>
+                                <p>Premium quality spawn for shiitake mushrooms</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(31 reviews)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">₹200</span>
+                                    <span class="unit">/kg</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart-btn" data-product="3">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="product-item" data-category="specialty" data-price="180">
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x200/4a7c59/ffffff?text=Reishi+Spawn" alt="Reishi Mushroom Spawn">
+                                <div class="product-actions">
+                                    <button class="quick-view" data-product="4"><i class="fas fa-eye"></i></button>
+                                    <button class="add-to-cart" data-product="4"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Reishi Mushroom Spawn</h3>
+                                <p>Medicinal mushroom spawn for health benefits</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(12 reviews)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">₹180</span>
+                                    <span class="unit">/kg</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart-btn" data-product="4">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div class="product-item" data-category="button" data-price="160">
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x200/2c5530/ffffff?text=Portobello+Spawn" alt="Portobello Mushroom Spawn">
+                                <div class="product-actions">
+                                    <button class="quick-view" data-product="5"><i class="fas fa-eye"></i></button>
+                                    <button class="add-to-cart" data-product="5"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Portobello Mushroom Spawn</h3>
+                                <p>Large button mushroom variety spawn</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(15 reviews)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">₹160</span>
+                                    <span class="unit">/kg</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart-btn" data-product="5">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 6 -->
+                        <div class="product-item" data-category="oyster" data-price="130">
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x200/4a7c59/ffffff?text=Pink+Oyster+Spawn" alt="Pink Oyster Mushroom Spawn">
+                                <div class="product-actions">
+                                    <button class="quick-view" data-product="6"><i class="fas fa-eye"></i></button>
+                                    <button class="add-to-cart" data-product="6"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Pink Oyster Mushroom Spawn</h3>
+                                <p>Colorful variety of oyster mushroom spawn</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(8 reviews)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">₹130</span>
+                                    <span class="unit">/kg</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart-btn" data-product="6">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Load More Button -->
+                    <div class="load-more-section">
+                        <button class="btn btn-secondary load-more-btn">Load More Products</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total: ₹<span id="cartTotal">0</span></span>
+            </div>
+            <button class="btn btn-primary checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Product Details</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-product-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-product-info">
+                    <h4 id="modalProductName"></h4>
+                    <p id="modalDescription"></p>
+                    <div class="modal-rating" id="modalRating"></div>
+                    <div class="modal-price">
+                        <span id="modalPrice"></span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label>Quantity:</label>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" id="modalQuantity" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary add-to-cart-modal">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Spawn Production Unit</h3>
+                    <p>Reliable source for high-quality mushroom spawn</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> info@spawnproduction.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Spawn Production Unit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html>
